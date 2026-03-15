@@ -31,7 +31,7 @@ param frontendImageName string = ''
 param frontendAllowedIpCidrs array = []
 
 @description('Enable read-only anonymous API policies in production for dashboard/demo access.')
-param allowAnonymousReadOnlyInProd bool = false
+param allowAnonymousReadOnlyInProd bool = true
 
 @description('Enable full anonymous API policies in production for demo mode. Overrides read-only mode when true.')
 param allowAnonymousFullInProd bool = false

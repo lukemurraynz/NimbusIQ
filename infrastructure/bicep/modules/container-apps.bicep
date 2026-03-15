@@ -30,7 +30,7 @@ param frontendImageName string = ''
 @description('Allowed CIDR ranges for frontend public ingress. Empty array means unrestricted ingress.')
 param frontendAllowedIpCidrs array = []
 @description('Enable read-only anonymous API access in production for dashboard/demo scenarios.')
-param allowAnonymousReadOnlyInProd bool = false
+param allowAnonymousReadOnlyInProd bool = true
 @description('Enable full anonymous API access in production for demo scenarios. Overrides read-only mode when true.')
 param allowAnonymousFullInProd bool = false
 
