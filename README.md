@@ -4,7 +4,7 @@
 
 NimbusIQ is an AI-powered cloud intelligence platform that continuously discovers, scores, and evolves Azure service estates using a ten-agent analysis pipeline powered by [Microsoft Agent Framework](https://learn.microsoft.com/agent-framework/overview/?pivots=programming-language-csharp&WT.mc_id=AZ-MVP-5004796) and [Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/what-is-azure-ai-foundry?WT.mc_id=AZ-MVP-5004796). It detects configuration drift, surfaces governance-approved remediation plans, and generates deployable IaC — all requiring human approval before any change is applied.
 
-![Dashboard Pane](docs/NimbusIQDashboard.jpg)
+![Dashboard Pane](docs/NimbusIQDashboard.png)
 
 ---
 
