@@ -34,7 +34,7 @@ param frontendAllowedIpCidrs array = []
 param allowAnonymousReadOnlyInProd bool = true
 
 @description('Enable full anonymous API policies in production for demo mode. Overrides read-only mode when true.')
-param allowAnonymousFullInProd bool = false
+param allowAnonymousFullInProd bool = true
 
 @description('Public bootstrap image used until azd deploy publishes images to ACR')
 param bootstrapImage string = 'mcr.microsoft.com/dotnet/samples:aspnetapp'

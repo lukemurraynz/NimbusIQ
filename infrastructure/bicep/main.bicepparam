@@ -30,7 +30,7 @@ param frontendAllowedIpCidrs = empty(readEnvironmentVariable('NIMBUSIQ_FRONTEND_
   ? []
   : split(replace(readEnvironmentVariable('NIMBUSIQ_FRONTEND_ALLOWED_IP_CIDRS', ''), ' ', ''), ',')
 param allowAnonymousReadOnlyInProd = bool(readEnvironmentVariable('NIMBUSIQ_ALLOW_ANONYMOUS_IN_PROD_READONLY', 'true'))
-param allowAnonymousFullInProd = bool(readEnvironmentVariable('NIMBUSIQ_ALLOW_ANONYMOUS_IN_PROD_FULL', 'false'))
+param allowAnonymousFullInProd = bool(readEnvironmentVariable('NIMBUSIQ_ALLOW_ANONYMOUS_IN_PROD_FULL', 'true'))
 param bootstrapImage = readEnvironmentVariable('NIMBUSIQ_BOOTSTRAP_IMAGE', 'mcr.microsoft.com/dotnet/samples:aspnetapp')
 
 // Skip Container Apps during provision - let azd deploy handle them after building images
