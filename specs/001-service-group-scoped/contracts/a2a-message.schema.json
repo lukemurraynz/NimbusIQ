@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://atlas.example.com/schemas/a2a-message.schema.json",
+  "title": "Atlas A2A Message",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "message_id",
+    "correlation_id",
+    "timestamp",
+    "sender_agent",
+    "message_type",
+    "payload",
+    "lineage"
+  ],
+  "properties": {
+    "message_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "correlation_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sender_agent": {
+      "type": "string"
+    },
+    "recipient_agent": {
+      "type": ["string", "null"]
+    },
+    "message_type": {
+      "type": "string",
+      "enum": [
+        "discovery",
+        "analysis",
+        "recommendation",
+        "negotiation",
+        "decision",
+        "status",
+        "error",
+        "concurrent_result",
+        "mediation_request",
+        "mediation_outcome",
+        "conflict",
+        "escalation"
+      ]
+    },
+    "payload": {
+      "type": "object"
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["low", "normal", "high"]
+    },
+    "ttl_seconds": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "lineage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "origin_agent",
+        "contributing_agents",
+        "evidence_references",
+        "decision_path"
+      ],
+      "properties": {
+        "origin_agent": {
+          "type": "string"
+        },
+        "contributing_agents": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "evidence_references": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "decision_path": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "confidence_score": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "trace_id": {
+          "type": "string"
+        },
+        "span_id": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
