@@ -1,0 +1,500 @@
+<mxfile host="app.diagrams.net" modified="2026-03-09T00:00:00.000Z" agent="Diagram Smith" version="24.0.0">
+  <diagram id="index_sheet" name="00 - Index">
+    <mxGraphModel dx="1400" dy="850" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="idx_0" />
+        <mxCell id="idx_1" parent="idx_0" />
+        <mxCell id="idx_title" value="NimbusIQ - AI Dev Days Hackathon Submission" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=28;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="idx_1">
+          <mxGeometry x="80" y="60" width="1000" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="idx_subtitle" value="Multi-Agent Cloud Intelligence Platform" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontColor=#605E5C;" vertex="1" parent="idx_1">
+          <mxGeometry x="80" y="120" width="1000" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="idx_purpose_title" value="Purpose" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#323130;" vertex="1" parent="idx_1">
+          <mxGeometry x="80" y="180" width="1000" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="idx_purpose_text" value="This diagram pack illustrates NimbusIQ&apos;s architecture for the AI Dev Days Hackathon, demonstrating Microsoft Agent Framework integration with Azure AI Foundry, multi-agent orchestration patterns, and enterprise-grade cloud deployment topology." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=14;fontColor=#605E5C;" vertex="1" parent="idx_1">
+          <mxGeometry x="80" y="210" width="1000" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="idx_sheets_title" value="Diagram Sheets" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#323130;" vertex="1" parent="idx_1">
+          <mxGeometry x="80" y="290" width="1000" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="idx_sheet1" value="01 - C4 Container - System Architecture" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FE;strokeColor=#0078D4;strokeWidth=2;align=left;spacingLeft=15;fontSize=14;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="idx_1">
+          <mxGeometry x="80" y="340" width="1000" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="idx_sheet1_desc" value="High-level container view showing Control Plane API, Agent Orchestrator, Frontend, and Azure service integrations (AI Foundry, PostgreSQL, Container Apps)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#605E5C;spacingLeft=15;" vertex="1" parent="idx_1">
+          <mxGeometry x="80" y="395" width="1000" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="idx_sheet2" value="02 - Agent Orchestration Flow" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#7B1FA2;strokeWidth=2;align=left;spacingLeft=15;fontSize=14;fontStyle=1;fontColor=#7B1FA2;" vertex="1" parent="idx_1">
+          <mxGeometry x="80" y="440" width="1000" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="idx_sheet2_desc" value="Workflow showing 10 specialized agents (6 AI-enhanced using GPT-4, 4 deterministic) with sequential, parallel, and leader-worker orchestration patterns via Microsoft Agent Framework" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#605E5C;spacingLeft=15;" vertex="1" parent="idx_1">
+          <mxGeometry x="80" y="495" width="1000" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="idx_sheet3" value="03 - Deployment Architecture" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#F57C00;strokeWidth=2;align=left;spacingLeft=15;fontSize=14;fontStyle=1;fontColor=#F57C00;" vertex="1" parent="idx_1">
+          <mxGeometry x="80" y="540" width="1000" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="idx_sheet3_desc" value="Azure infrastructure topology showing Container Apps deployment, VNet integration, managed identities, private endpoints, Network Security Perimeter, and zero-secrets architecture" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#605E5C;spacingLeft=15;" vertex="1" parent="idx_1">
+          <mxGeometry x="80" y="595" width="1000" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="idx_legend_title" value="Legend &amp; Conventions" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#323130;" vertex="1" parent="idx_1">
+          <mxGeometry x="80" y="650" width="1000" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="idx_legend_c4" value="C4 Container Diagram:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#323130;" vertex="1" parent="idx_1">
+          <mxGeometry x="80" y="690" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="idx_legend_c4_sys" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FE;strokeColor=#0078D4;strokeWidth=2;" vertex="1" parent="idx_1">
+          <mxGeometry x="290" y="690" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="idx_legend_c4_sys_label" value="System Boundary" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#605E5C;" vertex="1" parent="idx_1">
+          <mxGeometry x="360" y="695" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="idx_legend_c4_container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0078D4;strokeWidth=2;" vertex="1" parent="idx_1">
+          <mxGeometry x="490" y="690" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="idx_legend_c4_container_label" value="Container" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#605E5C;" vertex="1" parent="idx_1">
+          <mxGeometry x="560" y="695" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="idx_legend_c4_db" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#FFFFFF;strokeColor=#107C10;strokeWidth=2;" vertex="1" parent="idx_1">
+          <mxGeometry x="690" y="690" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="idx_legend_c4_db_label" value="Data Store" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#605E5C;" vertex="1" parent="idx_1">
+          <mxGeometry x="750" y="695" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="idx_legend_flow" value="Agent Flow:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#323130;" vertex="1" parent="idx_1">
+          <mxGeometry x="80" y="740" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="idx_legend_flow_ai" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#7B1FA2;strokeWidth=2;" vertex="1" parent="idx_1">
+          <mxGeometry x="290" y="740" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="idx_legend_flow_ai_label" value="AI-Enhanced Agent" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#605E5C;" vertex="1" parent="idx_1">
+          <mxGeometry x="380" y="745" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="idx_legend_flow_det" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8EAF6;strokeColor=#3F51B5;strokeWidth=2;" vertex="1" parent="idx_1">
+          <mxGeometry x="520" y="740" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="idx_legend_flow_det_label" value="Deterministic Agent" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#605E5C;" vertex="1" parent="idx_1">
+          <mxGeometry x="610" y="745" width="130" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="c4_container" name="01 - C4 Container - System Architecture">
+    <mxGraphModel dx="1400" dy="850" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="c4_0" />
+        <mxCell id="c4_1" parent="c4_0" />
+        <mxCell id="c4_title" value="NimbusIQ - System Architecture (C4 Container View)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="c4_1">
+          <mxGeometry x="80" y="30" width="1000" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c4_user" value="&lt;b&gt;Platform Engineer&lt;/b&gt;&lt;br&gt;[Person]&lt;br&gt;&lt;br&gt;Monitors cloud infrastructure and reviews AI-generated recommendations" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4E6;strokeColor=#FF9800;strokeWidth=2;fontSize=11;align=center;" vertex="1" parent="c4_1">
+          <mxGeometry x="80" y="100" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c4_boundary_nimbusiq" value="NimbusIQ Platform [Azure Container Apps]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FE;strokeColor=#0078D4;strokeWidth=3;fontSize=13;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=5;" vertex="1" parent="c4_1">
+          <mxGeometry x="320" y="90" width="760" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="c4_frontend" value="&lt;b&gt;Frontend&lt;/b&gt;&lt;br&gt;[React + Fluent UI v9]&lt;br&gt;&lt;br&gt;Dashboard UI showing compliance scores, drift detection, Well-Architected assessments" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0078D4;strokeWidth=2;fontSize=11;align=center;" vertex="1" parent="c4_1">
+          <mxGeometry x="350" y="130" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c4_control_plane" value="&lt;b&gt;Control Plane API&lt;/b&gt;&lt;br&gt;[ASP.NET Core .NET 10]&lt;br&gt;&lt;br&gt;REST API handling assessment requests, agent coordination, and result aggregation&lt;br&gt;&lt;br&gt;Tech: OpenTelemetry, SignalR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0078D4;strokeWidth=2;fontSize=11;align=center;" vertex="1" parent="c4_1">
+          <mxGeometry x="570" y="130" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="c4_orchestrator" value="&lt;b&gt;Agent Orchestrator&lt;/b&gt;&lt;br&gt;[.NET 10 Background Worker]&lt;br&gt;&lt;br&gt;Executes multi-agent workflows using Microsoft Agent Framework (MAF v1.0.0-rc3)&lt;br&gt;&lt;br&gt;Tech: AIProjectClient, Sequential/Parallel/Leader-Worker patterns" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0078D4;strokeWidth=2;fontSize=11;align=center;" vertex="1" parent="c4_1">
+          <mxGeometry x="810" y="130" width="240" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c4_edge_user_frontend" value="Uses&lt;br&gt;[HTTPS]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#0078D4;strokeWidth=2;fontSize=10;fontColor=#605E5C;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="c4_1" source="c4_user" target="c4_frontend">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="150" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4_edge_frontend_api" value="Calls API&lt;br&gt;[REST/SignalR]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#0078D4;strokeWidth=2;fontSize=10;fontColor=#605E5C;" edge="1" parent="c4_1" source="c4_frontend" target="c4_control_plane">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4_edge_api_orchestrator" value="Enqueues Jobs&lt;br&gt;[PostgreSQL Queue]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#0078D4;strokeWidth=2;fontSize=10;fontColor=#605E5C;" edge="1" parent="c4_1" source="c4_control_plane" target="c4_orchestrator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4_boundary_azure" value="Azure Platform Services" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#757575;strokeWidth=2;fontSize=13;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=5;" vertex="1" parent="c4_1">
+          <mxGeometry x="320" y="420" width="760" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="c4_ai_foundry" value="&lt;b&gt;Azure AI Foundry&lt;/b&gt;&lt;br&gt;[AI Services + Project]&lt;br&gt;&lt;br&gt;GPT-4 model deployment for 6 AI-enhanced agents&lt;br&gt;&lt;br&gt;Auth: Managed Identity&lt;br&gt;Classification: Confidential" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#7B1FA2;strokeWidth=2;fontSize=11;align=center;" vertex="1" parent="c4_1">
+          <mxGeometry x="350" y="460" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c4_postgresql" value="&lt;b&gt;PostgreSQL Flexible Server&lt;/b&gt;&lt;br&gt;[Managed Database]&lt;br&gt;&lt;br&gt;Assessment results, agent state, job queue&lt;br&gt;&lt;br&gt;Auth: Entra ID (Managed Identity)&lt;br&gt;Network: VNet integrated&lt;br&gt;Classification: PII/Confidential" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#FFFFFF;strokeColor=#107C10;strokeWidth=2;fontSize=11;align=center;" vertex="1" parent="c4_1">
+          <mxGeometry x="590" y="460" width="180" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="c4_acr" value="&lt;b&gt;Azure Container Registry&lt;/b&gt;&lt;br&gt;[Container Images]&lt;br&gt;&lt;br&gt;Stores container images for Control Plane, Orchestrator, Frontend" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0078D4;strokeWidth=2;fontSize=11;align=center;" vertex="1" parent="c4_1">
+          <mxGeometry x="800" y="460" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c4_keyvault" value="&lt;b&gt;Azure Key Vault&lt;/b&gt;&lt;br&gt;[Secrets Manager]&lt;br&gt;&lt;br&gt;PostgreSQL connection string&lt;br&gt;&lt;br&gt;Auth: Managed Identity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D32F2F;strokeWidth=2;fontSize=11;align=center;" vertex="1" parent="c4_1">
+          <mxGeometry x="800" y="590" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c4_log_analytics" value="&lt;b&gt;Log Analytics Workspace&lt;/b&gt;&lt;br&gt;[Observability]&lt;br&gt;&lt;br&gt;OpenTelemetry traces, metrics, logs from all containers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0097A7;strokeWidth=2;fontSize=11;align=center;" vertex="1" parent="c4_1">
+          <mxGeometry x="350" y="620" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c4_edge_orchestrator_ai" value="Invokes Agents&lt;br&gt;[MAF AIProjectClient]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#7B1FA2;strokeWidth=2;fontSize=10;fontColor=#605E5C;startArrow=classic;startFill=1;" edge="1" parent="c4_1" source="c4_orchestrator" target="c4_ai_foundry">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="930" y="310" />
+              <mxPoint x="930" y="430" />
+              <mxPoint x="450" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4_edge_api_db" value="Reads/Writes&lt;br&gt;[EF Core]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#107C10;strokeWidth=2;fontSize=10;fontColor=#605E5C;startArrow=classic;startFill=1;" edge="1" parent="c4_1" source="c4_control_plane" target="c4_postgresql">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4_edge_orchestrator_db" value="Reads/Writes&lt;br&gt;[EF Core]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#107C10;strokeWidth=2;fontSize=10;fontColor=#605E5C;startArrow=classic;startFill=1;" edge="1" parent="c4_1" source="c4_orchestrator" target="c4_postgresql">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="930" y="310" />
+              <mxPoint x="930" y="430" />
+              <mxPoint x="680" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4_edge_api_kv" value="Reads Secrets&lt;br&gt;[Managed Identity]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#D32F2F;strokeWidth=2;fontSize=10;fontColor=#605E5C;dashed=1;" edge="1" parent="c4_1" source="c4_control_plane" target="c4_keyvault">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4_edge_orchestrator_kv" value="Reads Secrets&lt;br&gt;[Managed Identity]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#D32F2F;strokeWidth=2;fontSize=10;fontColor=#605E5C;dashed=1;" edge="1" parent="c4_1" source="c4_orchestrator" target="c4_keyvault">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4_edge_api_logs" value="Sends Telemetry&lt;br&gt;[OpenTelemetry]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#0097A7;strokeWidth=2;fontSize=10;fontColor=#605E5C;dashed=1;" edge="1" parent="c4_1" source="c4_control_plane" target="c4_log_analytics">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4_edge_orchestrator_logs" value="Sends Telemetry&lt;br&gt;[OpenTelemetry]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#0097A7;strokeWidth=2;fontSize=10;fontColor=#605E5C;dashed=1;" edge="1" parent="c4_1" source="c4_orchestrator" target="c4_log_analytics">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="810" y="310" />
+              <mxPoint x="810" y="400" />
+              <mxPoint x="450" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4_edge_frontend_logs" value="Sends Telemetry" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#0097A7;strokeWidth=2;fontSize=10;fontColor=#605E5C;dashed=1;" edge="1" parent="c4_1" source="c4_frontend" target="c4_log_analytics">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="280" />
+              <mxPoint x="300" y="280" />
+              <mxPoint x="300" y="600" />
+              <mxPoint x="450" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4_assumptions" value="&lt;b&gt;Assumptions / Key Decisions&lt;/b&gt;&lt;br&gt;&lt;br&gt;• Zero-secrets architecture: All service-to-service auth uses Managed Identity&lt;br&gt;• Microsoft Agent Framework (MAF) v1.0.0-rc3 with AIProjectClient pattern&lt;br&gt;• PostgreSQL used for both business data and job queue (no separate queue service)&lt;br&gt;• OpenTelemetry instrumentation on all containers&lt;br&gt;• 6 AI-enhanced agents use GPT-4 via AI Foundry&lt;br&gt;• 4 deterministic agents run rule-based analysis (no LLM calls)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;strokeWidth=2;fontSize=11;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;" vertex="1" parent="c4_1">
+          <mxGeometry x="80" y="420" width="210" height="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="agent_flow" name="02 - Agent Orchestration Flow">
+    <mxGraphModel dx="1400" dy="850" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="flow_0" />
+        <mxCell id="flow_1" parent="flow_0" />
+        <mxCell id="flow_title" value="NimbusIQ - Agent Orchestration Flow" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;fontStyle=1;fontColor=#7B1FA2;" vertex="1" parent="flow_1">
+          <mxGeometry x="80" y="30" width="1000" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_trigger" value="&lt;b&gt;Assessment Request&lt;/b&gt;&lt;br&gt;User initiates cloud assessment" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4CAF50;strokeColor=#2E7D32;strokeWidth=2;fontSize=11;fontColor=#FFFFFF;fontStyle=1;" vertex="1" parent="flow_1">
+          <mxGeometry x="80" y="100" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_orchestrator_entry" value="&lt;b&gt;Agent Orchestrator&lt;/b&gt;&lt;br&gt;(MAF Coordinator)&lt;br&gt;&lt;br&gt;Determines execution strategy based on assessment scope" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1976D2;strokeWidth=2;fontSize=11;align=center;" vertex="1" parent="flow_1">
+          <mxGeometry x="280" y="100" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_edge_trigger_orchestrator" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#1976D2;strokeWidth=3;" edge="1" parent="flow_1" source="flow_trigger" target="flow_orchestrator_entry">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_parallel_title" value="Parallel Execution Pattern (Independent Agents)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#1976D2;" vertex="1" parent="flow_1">
+          <mxGeometry x="520" y="90" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_ai_agent1" value="&lt;b&gt;Architecture Agent&lt;/b&gt;&lt;br&gt;[AI-Enhanced]&lt;br&gt;&lt;br&gt;Analyzes against Well-Architected Framework&lt;br&gt;&lt;br&gt;LLM: GPT-4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#7B1FA2;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="flow_1">
+          <mxGeometry x="520" y="130" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_ai_agent2" value="&lt;b&gt;Cost Optimization Agent&lt;/b&gt;&lt;br&gt;[AI-Enhanced]&lt;br&gt;&lt;br&gt;Identifies savings opportunities&lt;br&gt;&lt;br&gt;LLM: GPT-4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#7B1FA2;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="flow_1">
+          <mxGeometry x="700" y="130" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_ai_agent3" value="&lt;b&gt;Reliability Agent&lt;/b&gt;&lt;br&gt;[AI-Enhanced]&lt;br&gt;&lt;br&gt;Assesses SLAs and resilience patterns&lt;br&gt;&lt;br&gt;LLM: GPT-4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#7B1FA2;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="flow_1">
+          <mxGeometry x="880" y="130" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_edge_orch_ai1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#7B1FA2;strokeWidth=2;" edge="1" parent="flow_1" source="flow_orchestrator_entry" target="flow_ai_agent1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_edge_orch_ai2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#7B1FA2;strokeWidth=2;" edge="1" parent="flow_1" source="flow_orchestrator_entry" target="flow_ai_agent2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="140" />
+              <mxPoint x="490" y="175" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_edge_orch_ai3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#7B1FA2;strokeWidth=2;" edge="1" parent="flow_1" source="flow_orchestrator_entry" target="flow_ai_agent3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="140" />
+              <mxPoint x="490" y="175" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_ai_agent4" value="&lt;b&gt;Sustainability Agent&lt;/b&gt;&lt;br&gt;[AI-Enhanced]&lt;br&gt;&lt;br&gt;Evaluates carbon footprint&lt;br&gt;&lt;br&gt;LLM: GPT-4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#7B1FA2;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="flow_1">
+          <mxGeometry x="520" y="250" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_ai_agent5" value="&lt;b&gt;Governance Agent&lt;/b&gt;&lt;br&gt;[AI-Enhanced]&lt;br&gt;&lt;br&gt;Audits IAM policies&lt;br&gt;&lt;br&gt;LLM: GPT-4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#7B1FA2;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="flow_1">
+          <mxGeometry x="700" y="250" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_ai_agent6" value="&lt;b&gt;Drift Detection Agent&lt;/b&gt;&lt;br&gt;[AI-Enhanced]&lt;br&gt;&lt;br&gt;Identifies config drift&lt;br&gt;&lt;br&gt;LLM: GPT-4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#7B1FA2;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="flow_1">
+          <mxGeometry x="880" y="250" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_edge_orch_ai4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#7B1FA2;strokeWidth=2;" edge="1" parent="flow_1" source="flow_orchestrator_entry" target="flow_ai_agent4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="140" />
+              <mxPoint x="490" y="295" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_edge_orch_ai5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#7B1FA2;strokeWidth=2;" edge="1" parent="flow_1" source="flow_orchestrator_entry" target="flow_ai_agent5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="140" />
+              <mxPoint x="490" y="295" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_edge_orch_ai6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#7B1FA2;strokeWidth=2;" edge="1" parent="flow_1" source="flow_orchestrator_entry" target="flow_ai_agent6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="140" />
+              <mxPoint x="490" y="295" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_det_title" value="Deterministic Agents (Rule-Based, No LLM)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#3F51B5;" vertex="1" parent="flow_1">
+          <mxGeometry x="520" y="360" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_det_agent1" value="&lt;b&gt;Security Agent&lt;/b&gt;&lt;br&gt;[Deterministic]&lt;br&gt;&lt;br&gt;Static security analysis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8EAF6;strokeColor=#3F51B5;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="flow_1">
+          <mxGeometry x="520" y="400" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_det_agent2" value="&lt;b&gt;Compliance Agent&lt;/b&gt;&lt;br&gt;[Deterministic]&lt;br&gt;&lt;br&gt;Policy checking" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8EAF6;strokeColor=#3F51B5;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="flow_1">
+          <mxGeometry x="680" y="400" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_det_agent3" value="&lt;b&gt;Operations Agent&lt;/b&gt;&lt;br&gt;[Deterministic]&lt;br&gt;&lt;br&gt;Health checks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8EAF6;strokeColor=#3F51B5;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="flow_1">
+          <mxGeometry x="840" y="400" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_det_agent4" value="&lt;b&gt;Performance Agent&lt;/b&gt;&lt;br&gt;[Deterministic]&lt;br&gt;&lt;br&gt;Metrics analysis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8EAF6;strokeColor=#3F51B5;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="flow_1">
+          <mxGeometry x="1000" y="400" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_edge_orch_det1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#3F51B5;strokeWidth=2;" edge="1" parent="flow_1" source="flow_orchestrator_entry" target="flow_det_agent1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="140" />
+              <mxPoint x="490" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_edge_orch_det2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#3F51B5;strokeWidth=2;" edge="1" parent="flow_1" source="flow_orchestrator_entry" target="flow_det_agent2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="140" />
+              <mxPoint x="490" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_edge_orch_det3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#3F51B5;strokeWidth=2;" edge="1" parent="flow_1" source="flow_orchestrator_entry" target="flow_det_agent3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="140" />
+              <mxPoint x="490" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_edge_orch_det4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#3F51B5;strokeWidth=2;" edge="1" parent="flow_1" source="flow_orchestrator_entry" target="flow_det_agent4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="140" />
+              <mxPoint x="490" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_aggregator" value="&lt;b&gt;Result Aggregator&lt;/b&gt;&lt;br&gt;(MAF Coordinator)&lt;br&gt;&lt;br&gt;Collects agent findings, calculates scores, detects conflicts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1976D2;strokeWidth=2;fontSize=11;align=center;" vertex="1" parent="flow_1">
+          <mxGeometry x="280" y="520" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_edge_ai1_agg" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;strokeColor=#1976D2;strokeWidth=2;" edge="1" parent="flow_1" source="flow_ai_agent1" target="flow_aggregator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_edge_ai2_agg" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;strokeColor=#1976D2;strokeWidth=2;" edge="1" parent="flow_1" source="flow_ai_agent2" target="flow_aggregator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_edge_ai3_agg" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;strokeColor=#1976D2;strokeWidth=2;" edge="1" parent="flow_1" source="flow_ai_agent3" target="flow_aggregator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_edge_ai4_agg" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#1976D2;strokeWidth=2;" edge="1" parent="flow_1" source="flow_ai_agent4" target="flow_aggregator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_edge_ai5_agg" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#1976D2;strokeWidth=2;" edge="1" parent="flow_1" source="flow_ai_agent5" target="flow_aggregator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_edge_ai6_agg" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#1976D2;strokeWidth=2;" edge="1" parent="flow_1" source="flow_ai_agent6" target="flow_aggregator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_edge_det1_agg" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;strokeColor=#1976D2;strokeWidth=2;" edge="1" parent="flow_1" source="flow_det_agent1" target="flow_aggregator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_edge_det2_agg" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;strokeColor=#1976D2;strokeWidth=2;" edge="1" parent="flow_1" source="flow_det_agent2" target="flow_aggregator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_edge_det3_agg" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;strokeColor=#1976D2;strokeWidth=2;" edge="1" parent="flow_1" source="flow_det_agent3" target="flow_aggregator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_edge_det4_agg" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;strokeColor=#1976D2;strokeWidth=2;" edge="1" parent="flow_1" source="flow_det_agent4" target="flow_aggregator">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_response" value="&lt;b&gt;Assessment Report&lt;/b&gt;&lt;br&gt;Delivered to Control Plane API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4CAF50;strokeColor=#2E7D32;strokeWidth=2;fontSize=11;fontColor=#FFFFFF;fontStyle=1;" vertex="1" parent="flow_1">
+          <mxGeometry x="80" y="530" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_edge_agg_response" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#1976D2;strokeWidth=3;" edge="1" parent="flow_1" source="flow_aggregator" target="flow_response">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_maf_note" value="&lt;b&gt;Microsoft Agent Framework (MAF) Integration&lt;/b&gt;&lt;br&gt;&lt;br&gt;• AIProjectClient pattern for agent invocation&lt;br&gt;• Parallel execution: All 10 agents run concurrently&lt;br&gt;• Sequential coordination: Orchestrator → Agents → Aggregator&lt;br&gt;• Leader-worker: Orchestrator coordinates, agents execute independently&lt;br&gt;• Token streaming: GPT-4 responses streamed for real-time feedback&lt;br&gt;• Error handling: Individual agent failures don&apos;t block assessment&lt;br&gt;• Observability: OpenTelemetry traces track agent execution paths" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;strokeWidth=2;fontSize=11;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;" vertex="1" parent="flow_1">
+          <mxGeometry x="80" y="640" width="1000" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_pattern_note" value="&lt;b&gt;Orchestration Pattern: Parallel + Aggregation&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#1976D2;" vertex="1" parent="flow_1">
+          <mxGeometry x="520" y="500" width="340" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="deployment" name="03 - Deployment Architecture">
+    <mxGraphModel dx="1400" dy="850" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="dep_0" />
+        <mxCell id="dep_1" parent="dep_0" />
+        <mxCell id="dep_title" value="NimbusIQ - Deployment Architecture (Azure)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;fontStyle=1;fontColor=#F57C00;" vertex="1" parent="dep_1">
+          <mxGeometry x="80" y="30" width="1000" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_internet" value="&lt;b&gt;Internet&lt;/b&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#E0E0E0;strokeColor=#757575;strokeWidth=2;fontSize=12;fontStyle=1;" vertex="1" parent="dep_1">
+          <mxGeometry x="80" y="90" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_boundary_azure" value="Azure Subscription" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1976D2;strokeWidth=3;fontSize=14;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=5;" vertex="1" parent="dep_1">
+          <mxGeometry x="260" y="90" width="820" height="680" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_boundary_vnet" value="Virtual Network (VNet) - 10.0.0.0/16" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F8E9;strokeColor=#689F38;strokeWidth=2;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=5;" vertex="1" parent="dep_1">
+          <mxGeometry x="290" y="130" width="760" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_subnet_apps" value="Container Apps Subnet - 10.0.0.0/23" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#689F38;strokeWidth=2;fontSize=11;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=5;dashed=1;dashPattern=4 4;" vertex="1" parent="dep_1">
+          <mxGeometry x="320" y="170" width="360" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_container_api" value="&lt;b&gt;Control Plane API&lt;/b&gt;&lt;br&gt;[Container App]&lt;br&gt;&lt;br&gt;.NET 10 ASP.NET Core&lt;br&gt;Managed Identity&lt;br&gt;Scale: 1-10 replicas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0078D4;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="dep_1">
+          <mxGeometry x="340" y="210" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_container_orch" value="&lt;b&gt;Agent Orchestrator&lt;/b&gt;&lt;br&gt;[Container App]&lt;br&gt;&lt;br&gt;.NET 10 Worker&lt;br&gt;Managed Identity&lt;br&gt;Scale: 1-5 replicas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0078D4;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="dep_1">
+          <mxGeometry x="510" y="210" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_container_frontend" value="&lt;b&gt;Frontend&lt;/b&gt;&lt;br&gt;[Container App]&lt;br&gt;&lt;br&gt;React + Nginx&lt;br&gt;No Managed Identity&lt;br&gt;Scale: 2-10 replicas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0078D4;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="dep_1">
+          <mxGeometry x="340" y="320" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_subnet_data" value="Data Services Subnet - 10.0.2.0/24" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#689F38;strokeWidth=2;fontSize=11;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=5;dashed=1;dashPattern=4 4;" vertex="1" parent="dep_1">
+          <mxGeometry x="710" y="170" width="310" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_postgresql" value="&lt;b&gt;PostgreSQL Flexible Server&lt;/b&gt;&lt;br&gt;&lt;br&gt;VNet integrated&lt;br&gt;Private endpoint&lt;br&gt;Entra ID auth only&lt;br&gt;TLS 1.2+&lt;br&gt;Auto-backup enabled" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#FFFFFF;strokeColor=#107C10;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="dep_1">
+          <mxGeometry x="740" y="210" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_ai_foundry" value="&lt;b&gt;Azure AI Foundry&lt;/b&gt;&lt;br&gt;[AI Services + Project]&lt;br&gt;&lt;br&gt;GPT-4 deployment&lt;br&gt;Managed Identity auth&lt;br&gt;Network: Public + NSP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#7B1FA2;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="dep_1">
+          <mxGeometry x="900" y="210" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_acr" value="&lt;b&gt;Container Registry&lt;/b&gt;&lt;br&gt;&lt;br&gt;Private endpoint&lt;br&gt;Admin disabled&lt;br&gt;Managed Identity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0078D4;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="dep_1">
+          <mxGeometry x="320" y="380" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_keyvault" value="&lt;b&gt;Key Vault&lt;/b&gt;&lt;br&gt;&lt;br&gt;Private endpoint&lt;br&gt;RBAC mode&lt;br&gt;Purge protection" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D32F2F;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="dep_1">
+          <mxGeometry x="470" y="380" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_log_analytics" value="&lt;b&gt;Log Analytics&lt;/b&gt;&lt;br&gt;&lt;br&gt;OpenTelemetry sink&lt;br&gt;30-day retention" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0097A7;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="dep_1">
+          <mxGeometry x="600" y="380" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_app_insights" value="&lt;b&gt;App Insights&lt;/b&gt;&lt;br&gt;&lt;br&gt;Telemetry&lt;br&gt;Distributed tracing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0097A7;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="dep_1">
+          <mxGeometry x="750" y="380" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_edge_internet_frontend" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#F57C00;strokeWidth=3;fontSize=10;fontColor=#605E5C;" edge="1" parent="dep_1" source="dep_internet" target="dep_container_frontend">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="130" />
+              <mxPoint x="240" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dep_edge_frontend_api" value="Internal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;strokeColor=#0078D4;strokeWidth=2;fontSize=10;fontColor=#605E5C;" edge="1" parent="dep_1" source="dep_container_frontend" target="dep_container_api">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_edge_api_db" value="Private&lt;br&gt;Endpoint" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#107C10;strokeWidth=2;fontSize=10;fontColor=#605E5C;startArrow=classic;startFill=1;" edge="1" parent="dep_1" source="dep_container_api" target="dep_postgresql">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_edge_orch_db" value="Private&lt;br&gt;Endpoint" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#107C10;strokeWidth=2;fontSize=10;fontColor=#605E5C;startArrow=classic;startFill=1;" edge="1" parent="dep_1" source="dep_container_orch" target="dep_postgresql">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="255" />
+              <mxPoint x="680" y="190" />
+              <mxPoint x="810" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dep_edge_orch_ai" value="Managed&lt;br&gt;Identity" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#7B1FA2;strokeWidth=2;fontSize=10;fontColor=#605E5C;dashed=1;" edge="1" parent="dep_1" source="dep_container_orch" target="dep_ai_foundry">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_edge_api_kv" value="Managed&lt;br&gt;Identity" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#D32F2F;strokeWidth=2;fontSize=10;fontColor=#605E5C;dashed=1;" edge="1" parent="dep_1" source="dep_container_api" target="dep_keyvault">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_edge_orch_kv" value="Managed&lt;br&gt;Identity" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#D32F2F;strokeWidth=2;fontSize=10;fontColor=#605E5C;dashed=1;" edge="1" parent="dep_1" source="dep_container_orch" target="dep_keyvault">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="340" />
+              <mxPoint x="520" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dep_edge_all_logs" value="OpenTelemetry" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#0097A7;strokeWidth=2;fontSize=10;fontColor=#605E5C;dashed=1;" edge="1" parent="dep_1" source="dep_container_frontend" target="dep_log_analytics">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_boundary_nsp" value="Network Security Perimeter (NSP)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;strokeWidth=2;fontSize=11;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=5;dashed=1;dashPattern=8 8;" vertex="1" parent="dep_1">
+          <mxGeometry x="290" y="570" width="760" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_nsp_ai" value="&lt;b&gt;AI Services&lt;/b&gt;&lt;br&gt;NSP Protected" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4EC;strokeColor=#7B1FA2;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="dep_1">
+          <mxGeometry x="320" y="620" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_nsp_foundry" value="&lt;b&gt;AI Foundry Project&lt;/b&gt;&lt;br&gt;NSP Protected" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4EC;strokeColor=#7B1FA2;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="dep_1">
+          <mxGeometry x="450" y="620" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_nsp_kv" value="&lt;b&gt;Key Vault&lt;/b&gt;&lt;br&gt;NSP Protected" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#D32F2F;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="dep_1">
+          <mxGeometry x="580" y="620" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_nsp_acr" value="&lt;b&gt;Container Registry&lt;/b&gt;&lt;br&gt;NSP Protected" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#0078D4;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="dep_1">
+          <mxGeometry x="710" y="620" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_nsp_pg" value="&lt;b&gt;PostgreSQL&lt;/b&gt;&lt;br&gt;NSP Protected" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#107C10;strokeWidth=2;fontSize=10;align=center;" vertex="1" parent="dep_1">
+          <mxGeometry x="840" y="620" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_nsp_label" value="&lt;b&gt;Zero-Secrets Architecture:&lt;/b&gt; All service-to-service auth uses Managed Identity. NSP enforces network boundaries for PaaS resources." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#C62828;fontStyle=2;" vertex="1" parent="dep_1">
+          <mxGeometry x="320" y="700" width="700" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_security_note" value="&lt;b&gt;Security &amp; Compliance Highlights&lt;/b&gt;&lt;br&gt;&lt;br&gt;• Managed Identities: All Container Apps use system-assigned identities&lt;br&gt;• Private Endpoints: PostgreSQL, Key Vault, ACR accessible only via VNet&lt;br&gt;• Network Security Perimeter: AI Foundry, AI Services in NSP learning mode&lt;br&gt;• Entra ID Authentication: PostgreSQL uses Entra ID (no SQL passwords)&lt;br&gt;• TLS Everywhere: HTTPS for external traffic, TLS 1.2+ for internal&lt;br&gt;• RBAC: Key Vault uses Azure RBAC (not access policies)&lt;br&gt;• Observability: OpenTelemetry → Log Analytics + App Insights&lt;br&gt;• Auto-scaling: Container Apps scale 1-10 replicas based on HTTP load&lt;br&gt;• Deployment: azd up with Bicep IaC (infrastructure/bicep/main.bicep)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;strokeWidth=2;fontSize=11;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;" vertex="1" parent="dep_1">
+          <mxGeometry x="80" y="190" width="160" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_legend_mi" value="Managed Identity (auth)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#605E5C;" vertex="1" parent="dep_1">
+          <mxGeometry x="120" y="550" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_legend_mi_line" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#D32F2F;strokeWidth=2;dashed=1;" edge="1" parent="dep_1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="560" as="sourcePoint" />
+            <mxPoint x="110" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dep_legend_pe" value="Private Endpoint (network)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#605E5C;" vertex="1" parent="dep_1">
+          <mxGeometry x="120" y="580" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dep_legend_pe_line" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#107C10;strokeWidth=2;" edge="1" parent="dep_1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="590" as="sourcePoint" />
+            <mxPoint x="110" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,43 @@
+{
+  "version": "1.0.0",
+  "rules": [
+    {
+      "ruleId": "ATLAS-SKU-001",
+      "source": "Custom",
+      "category": "Reliability",
+      "pillar": "Reliability",
+      "name": "Production SKU required",
+      "description": "Resources using Basic, Free, or Developer SKUs do not include production SLA guarantees.",
+      "severity": "High",
+      "rationale": "Low-tier SKUs reduce availability guarantees for production workloads.",
+      "applicabilityScope": [
+        "*"
+      ],
+      "evaluationQuery": "sku not in [Basic,Free,Developer]",
+      "remediationGuidance": "Upgrade to Standard or Premium SKU for production services.",
+      "references": [
+        "https://learn.microsoft.com/azure/well-architected/reliability/design-scale"
+      ],
+      "isEnabled": true
+    },
+    {
+      "ruleId": "PSRULE-ACR-001",
+      "source": "PSRule",
+      "category": "Security",
+      "pillar": "Security",
+      "name": "Container Registry: Disable Admin User",
+      "description": "ACR admin user should be disabled.",
+      "severity": "High",
+      "rationale": "Admin user credentials are broad and harder to govern than RBAC identities.",
+      "applicabilityScope": [
+        "Microsoft.ContainerRegistry/registries"
+      ],
+      "evaluationQuery": "properties.adminUserEnabled == false",
+      "remediationGuidance": "Disable ACR admin user and use managed identities/service principals with scoped roles.",
+      "references": [
+        "https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.ACR.AdminUser/"
+      ],
+      "isEnabled": true
+    }
+  ]
+}

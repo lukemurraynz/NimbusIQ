@@ -1,0 +1,113 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+
+name: atlas
+metadata:
+  template: atlas@0.0.1-beta
+
+# Infrastructure configuration
+infra:
+  provider: bicep
+  path: infrastructure/bicep
+  module: main
+
+# Service definitions
+services:
+  control-plane-api:
+    project: ./apps/control-plane-api/src/Api
+    language: csharp
+    host: containerapp
+    docker:
+      path: ../../Dockerfile
+      context: ../../../..
+      remoteBuild: true
+    hooks:
+      predeploy:
+        posix:
+          shell: sh
+          run: dotnet publish Atlas.ControlPlane.Api.csproj -c Release -o ../../publish-output /p:UseAppHost=false
+          interactive: false
+        windows:
+          shell: pwsh
+          run: dotnet publish Atlas.ControlPlane.Api.csproj -c Release -o ../../publish-output /p:UseAppHost=false
+          interactive: false
+
+  agent-orchestrator:
+    project: ./apps/agent-orchestrator/src/Orchestration
+    language: csharp
+    host: containerapp
+    docker:
+      path: ../../Dockerfile
+      context: ../../../..
+      remoteBuild: true
+
+  frontend:
+    project: ./apps/frontend
+    language: js
+    host: containerapp
+    docker:
+      path: ./Dockerfile
+      context: .
+      remoteBuild: true
+      buildArgs:
+        - VITE_CONTROL_PLANE_API_BASE_URL=${CONTROL_PLANE_API_BASE_URL}
+
+# Pipeline configuration
+pipeline:
+  provider: github
+
+# Hooks to handle deployment automation
+hooks:
+  # Optional tenant-scope Service Group RBAC assignment.
+  # Least-privilege default: the script does NOT grant tenant-wide Reader fallback unless
+  # explicitly enabled via NIMBUSIQ_ENABLE_TENANT_WIDE_READER=true (or script switch).
+  # continueOnError: true — deployment is not blocked if caller lacks Owner/UAA at tenant scopes.
+  postdeploy:
+    windows:
+      shell: pwsh
+      run: |
+        scripts/Grant-ServiceGroupReaderRole.ps1
+        scripts/Validate-DeploymentGate.ps1
+      continueOnError: false
+      interactive: false
+    posix:
+      shell: sh
+      run: |
+        if command -v pwsh > /dev/null 2>&1; then
+          pwsh scripts/Grant-ServiceGroupReaderRole.ps1 || echo "⚠️  Optional tenant-scope RBAC script did not complete successfully"
+          pwsh scripts/Validate-DeploymentGate.ps1
+        else
+          echo "❌ pwsh not found — deployment gate requires PowerShell 7"
+          exit 1
+        fi
+      continueOnError: false
+      interactive: false
+
+  postprovision:
+    windows:
+      shell: pwsh
+      run: |
+        Write-Host "Capturing infrastructure outputs..."
+        $apiUrl = azd env get-values | Select-String "CONTROL_PLANE_API_URL" | ForEach-Object {
+          if ($_.Line -match '="(.+)"') { $matches[1] } else { $_.Line.Split('=')[1] }
+        }
+        if ($apiUrl) {
+          azd env set CONTROL_PLANE_API_BASE_URL $apiUrl
+          Write-Host "✅ API URL configured: $apiUrl"
+        } else {
+          Write-Host "⚠️  No API URL found in outputs"
+        }
+        scripts/Grant-RuntimeSubscriptionRoles.ps1
+        scripts/bootstrap-foundry-agents.ps1
+    posix:
+      shell: sh
+      run: |
+        echo "Capturing infrastructure outputs..."
+        API_URL=$(azd env get-values | grep CONTROL_PLANE_API_URL | cut -d'=' -f2 | tr -d '"')
+        if [ -n "$API_URL" ]; then
+          azd env set CONTROL_PLANE_API_BASE_URL "$API_URL"
+          echo "✅ API URL configured: $API_URL"
+        else
+          echo "⚠️  No API URL found in outputs"
+        fi
+        command -v pwsh > /dev/null 2>&1 && pwsh scripts/Grant-RuntimeSubscriptionRoles.ps1 || echo "⚠️  pwsh not found — run scripts/Grant-RuntimeSubscriptionRoles.ps1 manually"
+        command -v pwsh > /dev/null 2>&1 && pwsh scripts/bootstrap-foundry-agents.ps1 || sh scripts/bootstrap-foundry-agents.sh
