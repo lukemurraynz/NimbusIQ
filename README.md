@@ -1,4 +1,4 @@
-# NimbusIQ — AI Cloud Architect
+# NimbusIQ - AI Cloud Architect
 
 > **AI Dev Days Hackathon submission** | Category: Best Multi-Agent System + Best Enterprise Solution
 
