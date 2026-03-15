@@ -2,7 +2,7 @@
 
 > **AI Dev Days Hackathon submission** | Category: Best Multi-Agent System + Best Enterprise Solution
 
-NimbusIQ is an AI-powered cloud intelligence platform that continuously discovers, scores, and evolves Azure service estates using a ten-agent analysis pipeline powered by [Microsoft Agent Framework](https://learn.microsoft.com/microsoft/agents/overview?WT.mc_id=AZ-MVP-5004796) and [Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/what-is-azure-ai-foundry?WT.mc_id=AZ-MVP-5004796). It detects configuration drift, surfaces governance-approved remediation plans, and generates deployable IaC — all requiring human approval before any change is applied.
+NimbusIQ is an AI-powered cloud intelligence platform that continuously discovers, scores, and evolves Azure service estates using a ten-agent analysis pipeline powered by [Microsoft Agent Framework](https://learn.microsoft.com/agent-framework/overview/?pivots=programming-language-csharp&WT.mc_id=AZ-MVP-5004796) and [Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/what-is-azure-ai-foundry?WT.mc_id=AZ-MVP-5004796). It detects configuration drift, surfaces governance-approved remediation plans, and generates deployable IaC — all requiring human approval before any change is applied.
 
 ---
 
@@ -91,8 +91,8 @@ Every agent-to-agent message carries `LineageMetadata` with decision path, contr
 
 | Technology                                                                                                            | How it is used                                                                                                                                                                                         |
 | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **[Microsoft Agent Framework (MAF)](https://learn.microsoft.com/microsoft/agents/overview?WT.mc_id=AZ-MVP-5004796)**  | `WorkflowBuilder` + `InProcessExecution` drives 10 specialised agents with `UseOpenTelemetry()` instrumentation. **BestPracticeEngine** (700+ rules) feeds normalised results into the agent pipeline. |
-| **[Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/what-is-azure-ai-foundry?WT.mc_id=AZ-MVP-5004796)** | GPT-4 model deployment used by 6 agents for LLM-enhanced analysis and IaC generation (Bicep/Terraform).                                                                                                |
+| **[Microsoft Agent Framework (MAF)](https://learn.microsoft.com/agent-framework/overview/?pivots=programming-language-csharp&WT.mc_id=AZ-MVP-5004796)**  | `WorkflowBuilder` + `InProcessExecution` drives 10 specialised agents with `UseOpenTelemetry()` instrumentation. **BestPracticeEngine** (700+ rules) feeds normalised results into the agent pipeline. |
+| **[Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/what-is-azure-ai-foundry?WT.mc_id=AZ-MVP-5004796)** | GPT-4 model deployment used by 6 agents for LLM-enhanced analysis and IaC generation (Bicep/Terraform).                                                                                                |
 | **[Azure MCP](https://learn.microsoft.com/azure/developer/azure-mcp-server?WT.mc_id=AZ-MVP-5004796)**                 | Agent-to-tool protocol for dynamic Azure capability discovery with bearer-token authentication.                                                                                                        |
 | **[Azure Container Apps](https://learn.microsoft.com/azure/container-apps/overview?WT.mc_id=AZ-MVP-5004796)**         | Hosts all three services with managed identity, auto-scaling, and zero-downtime revision deployment.                                                                                                   |
 | **GitHub Copilot**                                                                                                    | Used throughout development for agent scaffolding, Bicep module authoring, and test writing.                                                                                                           |
@@ -103,7 +103,7 @@ Every agent-to-agent message carries `LineageMetadata` with decision path, contr
 
 - [Azure Developer CLI (azd)](https://learn.microsoft.com/azure/developer/azure-developer-cli/install-azd?WT.mc_id=AZ-MVP-5004796)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-- [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0)
+- [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0?WT.mc_id=AZ-MVP-5004796)
 - [Node.js 20+](https://nodejs.org/)
 - Azure subscription with permissions to create resources
 
@@ -139,8 +139,8 @@ azd up
 
 This single command will:
 
-1. Create Azure resource group
-2. Deploy PostgreSQL Flexible Server with database
+1. Create an Azure resource group
+2. Deploy PostgreSQL Flexible Server with a database
 3. Create Azure Container Registry (ACR)
 4. Set up Azure Key Vault for secrets
 5. Create Log Analytics workspace
@@ -215,7 +215,7 @@ Resources provisioned:
 - **Azure Key Vault** — secrets management
 - **Log Analytics** — centralised logging and monitoring
 - **Managed Identities** — secure authentication between services
-- **Azure AI Foundry** — ML workspace for agent orchestration (optional)
+- **Microsoft Foundry** — ML workspace for agent orchestration (optional)
 - **Azure AI Services** — GPT-4 and embedding models (optional)
 - **Virtual Network** — private networking with private endpoints (optional)
 
