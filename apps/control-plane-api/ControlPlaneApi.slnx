@@ -1,0 +1,26 @@
+﻿<Solution><PropertyGroup>  <UserSecretsId>4e4acc17-c59b-4855-85be-01cd58001043</UserSecretsId>
+  </PropertyGroup>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Api/">
+    <Project Path="src/Api/Atlas.ControlPlane.Api.csproj" />
+  </Folder>
+  <Folder Name="/src/Application/">
+    <Project Path="src/Application/Atlas.ControlPlane.Application.csproj" />
+  </Folder>
+  <Folder Name="/src/Domain/">
+    <Project Path="src/Domain/Atlas.ControlPlane.Domain.csproj" />
+  </Folder>
+  <Folder Name="/src/Infrastructure/">
+    <Project Path="src/Infrastructure/Atlas.ControlPlane.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/Contract/">
+    <Project Path="tests/Contract/Atlas.ControlPlane.Tests.Contract.csproj" />
+  </Folder>
+  <Folder Name="/tests/Integration/">
+    <Project Path="tests/Integration/Atlas.ControlPlane.Tests.Integration.csproj" />
+  </Folder>
+  <Folder Name="/tests/Unit/">
+    <Project Path="tests/Unit/Atlas.ControlPlane.Tests.Unit.csproj" />
+  </Folder>
+</Solution>

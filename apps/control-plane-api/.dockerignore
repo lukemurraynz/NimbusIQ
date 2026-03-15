@@ -1,0 +1,36 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# CI/CD
+.github
+.azure
+
+# Documentation
+*.md
+docs/
+
+# Tests
+**/tests/
+**/*.Tests/
+**/*.Tests.*/
+
+# IDE
+.vs
+.vscode
+*.suo
+*.user
+.DS_Store
+
+# Build output
+**/bin/
+**/obj/
+**/publish/
+
+# Packages
+**/.nuget/
+**/packages/
+
+# Logs
+*.log

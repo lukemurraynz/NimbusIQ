@@ -1,0 +1,2 @@
+# Ignore Bicep compiled ARM output (generated files — not source of truth)
+*.json

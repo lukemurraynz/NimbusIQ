@@ -1,0 +1,65 @@
+# Build artifacts
+**/bin/
+**/obj/
+**/out/
+**/publish-output/
+
+# .NET build outputs
+*.dll
+*.pdb
+*.nupkg
+*.snupkg
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Test results
+*.trx
+*.coverage
+TestResults/
+test-results/
+**/screenshots/
+
+# Node
+node_modules/
+dist/
+dist-server/
+.next/
+.nuxt/
+build/
+
+# IDE
+.vs/
+.vscode/
+!.vscode/mcp.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Backup files
+*.backup
+*.bak
+*~
+
+# Prevent files with backslash paths from being committed
+*\\*
+.judges-cache/

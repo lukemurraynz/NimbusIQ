@@ -1,0 +1,23 @@
+﻿<Solution><PropertyGroup>  <UserSecretsId>4e4b565c-92f6-44d2-8eac-5b791f99604c</UserSecretsId>
+  </PropertyGroup>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Agents/">
+    <Project Path="src/Agents/Atlas.AgentOrchestrator.Agents.csproj" />
+  </Folder>
+  <Folder Name="/src/Contracts/">
+    <Project Path="src/Contracts/Atlas.AgentOrchestrator.Contracts.csproj" />
+  </Folder>
+  <Folder Name="/src/Integrations/">
+    <Project Path="src/Integrations/Atlas.AgentOrchestrator.Integrations.csproj" />
+  </Folder>
+  <Folder Name="/src/Orchestration/">
+    <Project Path="src/Orchestration/Atlas.AgentOrchestrator.Orchestration.csproj" />
+  </Folder>
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/Integration/">
+    <Project Path="tests/Integration/Atlas.AgentOrchestrator.Tests.Integration.csproj" />
+  </Folder>
+  <Folder Name="/tests/Unit/">
+    <Project Path="tests/Unit/Atlas.AgentOrchestrator.Tests.Unit.csproj" />
+  </Folder>
+</Solution>
