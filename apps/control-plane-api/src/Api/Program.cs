@@ -6,6 +6,7 @@ using Azure.Core;
 using Azure.Identity;
 using Atlas.AgentOrchestrator.Contracts;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
@@ -300,7 +301,7 @@ builder.Services.AddCors(options =>
 // Health checks
 builder.Services.AddSingleton<AiServiceHealthCheck>();
 builder.Services.AddHealthChecks()
-    .AddDbContextCheck<AtlasDbContext>("database")
+    .AddDbContextCheck<AtlasDbContext>("database", tags: ["ready"])
     .AddCheck<AiServiceHealthCheck>("ai_service", tags: ["ready"]);
 
 // Rate limiting — per-user fixed-window policy to protect against abuse
@@ -388,8 +389,16 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 // Health endpoints (bypass auth)
-app.MapHealthChecks("/health/ready");
-app.MapHealthChecks("/health/live");
+app.MapHealthChecks("/health/ready", new HealthCheckOptions
+{
+    Predicate = check => check.Tags.Contains("ready")
+});
+app.MapHealthChecks("/health/live", new HealthCheckOptions
+{
+    // Liveness must only indicate process availability.
+    // Dependency failures belong to readiness.
+    Predicate = _ => false
+});
 app.MapGet("/health/foundry", async (
     Atlas.ControlPlane.Application.Services.AIChatService aiService,
     CancellationToken cancellationToken) =>
