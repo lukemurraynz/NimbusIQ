@@ -1,8 +1,8 @@
 # NimbusIQ - AI Cloud Architect
 
-> **AI Dev Days Hackathon submission** | Category: Best Multi-Agent System + Best Enterprise Solution
+> **[AI Dev Days 2026 Hackathon](https://developer.microsoft.com/reactor/events/26647/?WT.mc_id=AZ-MVP-5004796) submission** | Category: Best Multi-Agent System + Best Enterprise Solution
 
-NimbusIQ is an AI-powered cloud intelligence platform that continuously discovers, scores, and evolves Azure service estates using a ten-agent analysis pipeline powered by [Microsoft Agent Framework](https://learn.microsoft.com/agent-framework/overview/?pivots=programming-language-csharp&WT.mc_id=AZ-MVP-5004796) and [Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/what-is-azure-ai-foundry?WT.mc_id=AZ-MVP-5004796). It detects configuration drift, surfaces governance-approved remediation plans, and generates deployable IaC — all requiring human approval before any change is applied.
+NimbusIQ is an AI-powered cloud intelligence platform that continuously discovers, scores, and evolves Azure service estates using a ten-agent analysis pipeline powered by [Microsoft Agent Framework](https://learn.microsoft.com/agent-framework/overview/?pivots=programming-language-csharp&WT.mc_id=AZ-MVP-5004796) and [Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/what-is-azure-ai-foundry?WT.mc_id=AZ-MVP-5004796). It detects configuration drift, surfaces governance-approved remediation plans, and generates deployable IaC - all requiring human approval before any change is applied.
 
 ![Dashboard Pane](docs/NimbusIQDashboard.png)
 
@@ -49,7 +49,7 @@ Full architecture diagrams: [docs/diagrams/](docs/diagrams/)
 
 ## How NimbusIQ Differs from Azure Advisor, PSRules, and Azure Quick Review
 
-Azure Advisor, PSRules for Azure, and Azure Quick Review are discovery and scanning tools — they detect violations and report them. NimbusIQ is an orchestration and decision-support platform that sits above these tools.
+Azure Advisor, PSRules for Azure, and Azure Quick Review are discovery and scanning tools - they detect violations and report them. NimbusIQ is an orchestration and decision-support platform that sits above these tools.
 
 | Capability                                | Azure Advisor | PSRule         | Azure Quick Review | NimbusIQ                 |
 | ----------------------------------------- | ------------- | -------------- | ------------------ | ------------------------ |
@@ -111,7 +111,7 @@ Every agent-to-agent message carries `LineageMetadata` with decision path, contr
 
 ---
 
-## Quick Start — Deploy with `azd up`
+## Quick Start - Deploy with `azd up`
 
 ### 1. Clone and initialise
 
@@ -211,15 +211,15 @@ The infrastructure is defined using [Azure Bicep](https://learn.microsoft.com/az
 
 Resources provisioned:
 
-- **Azure Container Apps** — hosting for all three services
-- **Azure Container Registry** — private Docker image registry
-- **PostgreSQL Flexible Server** — database for service metadata and graph
-- **Azure Key Vault** — secrets management
-- **Log Analytics** — centralised logging and monitoring
-- **Managed Identities** — secure authentication between services
-- **Microsoft Foundry** — ML workspace for agent orchestration (optional)
-- **Azure AI Services** — GPT-4 and embedding models (optional)
-- **Virtual Network** — private networking with private endpoints (optional)
+- **Azure Container Apps** - hosting for all three services
+- **Azure Container Registry** - private Docker image registry
+- **PostgreSQL Flexible Server** - database for service metadata and graph
+- **Azure Key Vault** - secrets management
+- **Log Analytics** - centralised logging and monitoring
+- **Managed Identities** - secure authentication between services
+- **Microsoft Foundry** - ML workspace for agent orchestration (optional)
+- **Azure AI Services** - GPT-4 and embedding models (optional)
+- **Virtual Network** - private networking with private endpoints (optional)
 
 ---
 
@@ -246,7 +246,7 @@ Resources provisioned:
 
 ## Blog Articles
 
-For detailed technical write-ups covering the individual components — drift detection, OpenTelemetry instrumentation, governance negotiation, container security, and more — see [luke.geek.nz](https://luke.geek.nz).
+For detailed technical write-ups covering the individual components - drift detection, OpenTelemetry instrumentation, governance negotiation, container security, and more - see [luke.geek.nz](https://luke.geek.nz).
 
 ---
 
@@ -256,4 +256,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute.
 
 ## License
 
-This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
+This project is licensed under the MIT License - see [LICENSE](LICENSE) for details.
